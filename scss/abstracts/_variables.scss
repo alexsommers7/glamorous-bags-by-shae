@@ -1,0 +1,52 @@
+
+// colors
+    $color-primary: rgba(228, 154, 153, .33);
+    $color-text-on-white: #333;
+    $color-text-on-dark: #fff;
+    $color-link-underline-hover: #fdcd05;
+    $color-background: #fff;
+    $color-background-light-grey: #F8F8F8;
+    $color-red: #ff7730;
+    $color-green: #55c57a;
+    $color-highlight: #a7a7a7;
+    $color-highlight-text: #fff;
+    $color-form-border: #707070;
+
+// nav
+    $nav-color-background: rgba($color-primary, .9);
+    $nav-color-button: #fff;
+
+// footer
+    $footer-background-color: #E3E3E3;
+    $footer-padding-small: 2rem;
+    $footer-padding-medium: 4rem;
+    $footer-padding-large: 8rem;
+
+// layout
+    $layout-max-width: 1400px;
+
+    $layout-section-margin-small: 4rem auto 0 auto;
+    $layout-section-margin-small-last-child: 4rem auto 4rem auto;
+
+    $layout-section-margin-medium: 6rem auto 0 auto;
+    $layout-section-margin-medium-last-child: 6rem auto 6rem auto;
+
+    $layout-section-margin-large: 8rem auto 0 auto;
+    $layout-section-margin-large-last-child: 8rem auto 8rem auto;
+
+    $layout-section-padding-small: 0 2rem;
+    $layout-section-padding-medium: 0 4rem;
+    $layout-section-padding-large: 0 8rem;
+
+// design
+    $design-border-radius-default: 3px;
+    $design-box-shadow-default: 0 1rem 3rem rgba(0,0,0, .15);
+
+// fonts
+    $font-family-primary: 'Cardo', serif;
+    $font-family-secondary: 'Oswald', sans-serif;
+    $font-weight-default: 400;
+
+// transitions
+    $transition-speed-regular: all .3s;
+    $transition-speed-slow: all .6s;

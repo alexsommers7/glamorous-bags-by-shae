@@ -1,0 +1,96 @@
+.button {
+    color: $color-text-on-white;
+    font-family: $font-family-secondary;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: $transition-speed-regular;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+
+    &:hover{
+        transform: translateY(-.25rem);
+
+        &::before {
+            bottom: -.1rem;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: .4rem;
+        border: 3px solid $color-primary;
+        width: 100%;
+        transition: $transition-speed-regular;
+    }
+}
+
+// override auto phone number styling
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.heading {
+    font-family: $font-family-secondary;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--primary {
+        font-weight: 500;
+        font-size: 4.8rem;
+
+        @include respond(desk-small) {
+            font-size: 7.2rem;
+        }
+    }
+
+    &--secondary {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    &--tertiary {
+        font-weight: 200;
+        font-size: 3rem;
+        position: relative;
+        padding: 2rem;
+    }
+
+    &--quaternary {
+        text-align: left;
+        font-weight: 200;
+        font-size: 2.4rem;
+    }
+}
+
+.disclaimer {
+    padding: 2rem;
+
+    @include respond(tab-port) {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include respond(tab-land) {
+        max-width: 65%;
+    }
+}
+
+// Type scale @ root size 62.5%
+// 12px = 1.2rem
+// 14px = 1.4rem
+// 16px = 1.6rem
+// 18px = 1.8rem
+// 20px = 2rem
+// 24px = 2.4rem
+// 30px = 3rem
+// 36px = 3.6rem
+// 48px = 4.8rem
+// 60px = 6rem
+// 72px = 7.2rem
+// 90px = 9rem
+// 100px = 10rem

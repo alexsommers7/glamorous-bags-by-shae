@@ -1,0 +1,206 @@
+.section--testimonials {
+    align-items: center;
+
+    @include respond(desk-small) {
+        flex-direction: row;
+        border: 2px solid $color-primary;
+        max-width: 1050px;
+        padding: 22rem 0;
+        margin: 12rem auto 0 auto;
+    }
+
+    @include respond(desk-medium) {
+        padding: 25rem 0;
+    }
+
+    & > picture {
+        margin: 3rem auto;
+        max-width: 37rem;
+
+        @include respond(desk-small) {
+            position: absolute;
+            left: -8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50%;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        & > img {
+            @include respond(desk-small) {
+                width: 90%;
+            }
+
+            @include respond(desk-medium) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.testimonials {
+    border: 2px solid $color-primary;
+    border-radius: $design-border-radius-default;
+    padding: 1.5rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+    max-width: 100%;
+
+    @include respond(tab-port) {
+        max-width: 50rem;
+    }
+
+    @include respond(desk-small) {
+        width: 45%;
+        max-width: none;
+        border: none;
+        margin-left: auto;
+        margin-right: 7.5%;
+    }
+
+    @include respond(desk-medium) {
+        margin-right: 6.5%;
+    }
+
+    &__heading {
+        align-self: flex-start;
+        margin: 2rem 0 -2rem -1rem;
+        position: relative;
+        z-index: 20;
+
+        @include respond(tab-port) {
+            align-self: center;
+            margin: 2rem 0 -2rem -25rem;
+        }
+
+        @include respond(desk-small) {
+            position: absolute;
+            top: 0;
+            right: -5rem;
+        }
+    }
+}
+
+.testimonial {
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    order: 2;
+    transform: translateY(-2rem);
+    transition: all .5s ease-in-out;
+    padding: 3rem;
+    // with padding: 3rem - slides will all be as tall as the tallest one
+    // without padding: 3rem - each slide will only be as tall as needed, regardless of others
+
+    @include respond(desk-small) {
+        font-size: 1.6rem;
+    }
+    
+    &.isActive {
+        animation: slideFade .5s ease-out forwards;
+        visibility: visible;
+        padding: 3rem;
+        order: 1;
+
+        & .testimonial__text::before {
+            left: -4.25rem;
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        position: relative;
+
+        &::before {
+            content: "\201c";
+            position: absolute;
+            left: -1rem;
+            top: -6.5rem;
+            opacity: 0;
+            font-size: 35rem;
+            color: rgba($color-text-on-white, .1);
+            line-height: 1; 
+            z-index: 1;
+            font-family: sans-serif;
+            transition: all .5s cubic-bezier(0.83, 0, 0.17, 1);
+
+            @include respond(desk-small) {
+                top: -8.5rem;
+            }
+        }
+    }
+
+    &__name {
+        margin: 2rem auto 0;
+    }
+
+    &__arrow {
+        position: absolute;
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        top: 50%;
+        z-index: 10;
+        transform: translateY(-50%);
+
+        &--left {
+            left: .5rem;
+        }
+
+        &--right {
+            right: .5rem;
+        }
+
+        & .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: $color-text-on-white;
+            display: inline-block;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -2rem auto 0;
+    }
+
+    &__dot {
+        width: .7rem;
+        height: .7rem;
+        margin: 0 4px;
+        border-radius: 100px;
+        background-color: rgba($color-text-on-white, .35);
+        transition: $transition-speed-regular;
+
+        &.isActive {
+            animation: dotFade .5s ease-out forwards;
+            
+        }
+    }
+}
+
+// slide animation
+@keyframes slideFade {
+    to{opacity: 1;transform: translateY(0);}
+}
+@keyframes dotFade {
+    to {background-color: $color-text-on-white;}
+}

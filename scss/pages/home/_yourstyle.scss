@@ -1,0 +1,113 @@
+.style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $layout-max-width;
+
+    @include respond(tab-port) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include respond(desk-small) {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        transform: translateX(3.5rem); // offsetting due to pseudo element extending left
+    }
+
+    &__heading {
+        @include respond(desk-small) {
+            margin-bottom: 3rem;
+        }   
+    }
+
+    &__hero {
+        position: relative;
+        overflow: visible;
+        border-radius: $design-border-radius-default;
+        margin-top: 6rem;
+        transform: translateX(3.1rem);
+        max-width: 30.5rem;
+
+        @include respond(tab-port) {
+            flex: 0 0 100%;
+            margin-left: auto;
+            margin-right: auto;
+            order: 2;
+            margin: 8rem auto 6rem;
+        }
+
+        @include respond(desk-small) {
+            flex: 0 0 50%;
+            order: 1;
+            max-width: 37rem;
+            margin: 0 6rem 0 0;
+        }
+        
+        &::before {
+            content: "";
+            width: 100%;
+            height: 115%;
+            background-color: $color-primary;
+            position: absolute;
+            border-radius: $design-border-radius-default;
+            top: -2.5rem;
+            left: -6rem;
+            z-index: -1;
+
+            @include respond(desk-small) {
+                height: 120%;
+                top: -4rem;
+            }
+        }
+
+        // remove default hover effect since overflow needs to be visible
+        & > img:hover {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    &__bags {
+        margin-top: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(tab-port) {
+            flex: 0 0 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+
+        @include respond(desk-small) {
+            flex: 1 0 50%;
+            order: 2;
+        }
+    }
+
+    &__bag {
+        margin: 1.5rem 0;
+        text-align: center;
+
+        @include respond(tab-port) {
+            flex: 1 0 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        & img {
+            max-width: 25rem;
+            margin: auto;
+
+            @include respond(desk-small) {
+                max-width: 22rem;
+            }
+        }
+    }
+
+}

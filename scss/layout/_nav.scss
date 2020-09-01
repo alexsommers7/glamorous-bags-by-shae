@@ -1,0 +1,209 @@
+// NAV
+.nav {
+    &__button {
+        appearance: none;
+        border: none;
+        background-color: $nav-color-button;
+        height: 6.5rem;
+        width: 6.5rem;
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba(0,0,0, .25);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: $transition-speed-regular;
+
+        &:focus {
+            outline: none;
+            height: 7rem;
+            width: 7rem;
+            top: 4rem;
+            right: 3.7rem;
+            box-shadow: 0 0 .3rem rgba(0,0,0, .5);
+
+            & .nav__icon::before {
+                top: -.975rem;
+            }
+
+            & .nav__icon::after {
+                top: .975rem;
+            }
+        }
+    }
+
+    &__background {
+        height: 6.5rem;
+        width: 6.5rem;
+        position: fixed;
+        opacity: 0;
+        top: 4rem;
+        right: 4rem;
+        border-radius: 50%;
+        visibility: hidden;
+        z-index: 100;
+        background-image: radial-gradient(rgba($color-primary, 1), rgba($color-primary, 1));
+        transition: all .8s cubic-bezier(0.83, 0, 0.17, 1);
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -20vw;
+        z-index: -1500;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        width: 75%;
+        @include flex-col-center;
+        transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-text-on-dark;
+        padding: 1rem 2rem;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+        background-size: 230%; // zooming in on bg so transparent covers block
+        transition: all .5s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%; // shifting background to left to fill block with white
+            color: $color-text-on-white; // changing color of text to be visible on white bg
+            transform: translateX(1rem);
+        }
+    }
+
+    // FUNCTIONALITY
+    &__button.nav-open ~ &__background {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(80);
+    }
+
+    &__button.nav-open ~ &__nav {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            width: 100%;
+            left: 0;
+            z-index: 1500;
+    }
+
+    // HAMBURGER ICON 
+    &__icon {
+        position: relative;
+        margin-top: 2px;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-text-on-white;
+            display: inline-block;
+            z-index: 3000;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        &::before {
+            top: -.875rem;
+        }
+
+        &::after {
+            top: .875rem;
+        }
+
+    }
+
+    // HOVER EFFECT
+    &__button:hover &__icon::before { // Hamburger bars spreading apart on hover
+        top: -.975rem;
+    }
+
+    &__button:hover &__icon::after { // Hamburger bars spreading apart on hover
+        top: .975rem;
+    }
+
+    // X ON-CLICK ICON EFFECT
+    &__button.nav-open .nav__icon {
+        background-color: transparent; // Hide the middle bar, while maintaing its size since the psuedo elements depend on it
+    }
+
+    &__button.nav-open .nav__icon::before { // Rotate the top bar to form one half of the X
+        transform: rotate(135deg);
+        top: 0;
+    }
+
+    &__button.nav-open .nav__icon::after { // Rotate the bottom bar to form the other half of the X
+        transform: rotate(-135deg);
+        top: 0;
+    }
+}
+
+// to-top button
+.toTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba($color-primary, .85);
+    z-index: 90;
+    transition: $transition-speed-regular;
+
+    &:active {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: rgba($color-primary, 1);
+    }
+
+    & > svg {
+        width: 3rem;
+        height: 3rem;
+        fill: #fff;   
+    }
+}

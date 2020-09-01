@@ -1,0 +1,75 @@
+.section--about {
+    margin-top: 5rem;
+    padding: 2rem;
+    align-items: center;
+    max-width: 1400px;
+
+    @include respond(desk-small) {
+        flex-direction: row;
+        margin: $layout-section-margin-large;
+    }
+}
+
+.about {
+    border: 2px solid $color-primary;
+    border-radius: $design-border-radius-default;
+    padding: 1.5rem;
+    position: relative;
+
+    @include respond(tab-port) {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @include respond(desk-small) {
+        flex: 0 0 60%;
+        transform: translateX(-3rem);
+        padding: 15rem 30% 16rem 8rem;
+    }
+
+    @include respond(desk-medium) {
+        flex: 0 0 60%;
+        transform: translateX(-3rem);
+        padding: 15rem 30% 16rem 12rem;
+    }
+
+    &__heading {
+        text-align: left;
+        margin-top: -4.5rem;
+        margin-left: -2.75rem;
+
+        @include respond(desk-small) {
+            position: absolute;
+            top: 7rem;
+            left: -1.5rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+
+        @include respond(desk-small) {
+            margin-bottom: 2.5rem;
+        }
+
+        &:first-of-type {
+            padding-top: 1.25rem;
+        }
+    }
+
+    &__founder {
+        text-align: right;
+    }
+
+    &__image {
+        margin-top: 4rem;
+        max-width: 40rem;
+        
+        @include respond(desk-small) {
+            position: absolute;
+            right: 16%;
+            top: 2rem;
+        }
+    }
+}

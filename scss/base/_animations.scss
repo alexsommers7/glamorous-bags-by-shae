@@ -1,0 +1,101 @@
+// INTERSECTION OBSERVER DECLARATIONS
+.fade {
+    transition: opacity .75s ease-in-out, transform .75s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+}
+
+//using CSS Grid as barometer for intersection observer API
+
+// does not support:
+.fadeFromTop,
+.fadeFromBottom,
+.fadeFromLeft,
+.fadeFromRight {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.fadeFromTopVisible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fadeFromBottomVisible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fadeFromLeftVisible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fadeFromRightVisible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+// does support:
+@supports (display: grid) {
+    .fadeFromTop,
+    .fadeFromBottom,
+    .fadeFromLeft,
+    .fadeFromRight {
+        opacity: 0;
+    }
+    
+    .fadeFromTop {
+        transform: translateY(-2rem);
+    }
+
+    .fadeFromBottom {
+        transform: translateY(2rem);
+    }
+
+    .fadeFromLeft {
+        transform: translateX(-2rem);
+    }
+
+    .fadeFromRight {
+        transform: translateX(2rem);
+    }
+}
+
+div.fadeDelayShort { // Adding div to override specificity of .fade transition declaration
+    transition: opacity .75s .4s ease-in, transform .75s .4s ease-in, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+
+    // Remove delay once stacked
+    @include respond(tab-port) {
+        transition: opacity .75s ease-in, transform .75s ease-in, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+    }
+}
+
+div.fadeDelayLong { // Adding div to override specificity of .fade transition declaration
+    transition: opacity .75s .6s ease-in, transform .75s .6s ease-in, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+
+    // Remove delay once stacked
+    @include respond(tab-port) {
+        transition: opacity .75s ease-in, transform .75s ease-in, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+    }
+}
+
+
+// KEYFRAMES FOR CSS ANIMATIONS
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

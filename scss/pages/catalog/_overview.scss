@@ -1,0 +1,44 @@
+.section--categories {
+    max-width: 1920px;
+
+    @include respond(desk-small) {
+        margin: 10rem auto;
+        padding: 0 2rem;
+    }
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @include respond(desk-small) {
+        flex-direction: row;
+    }
+
+    &__heading {
+        margin-bottom: -4rem;
+
+        @include respond(desk-small) {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.category {
+    margin: 2.5rem 0;
+
+    @include respond(desk-small) {
+        margin: 0 5rem;
+    }
+
+    @include respond(desk-large) {
+        margin: 0 8rem;
+    }
+
+    &__image {
+        max-width: 30rem;
+        margin: auto;
+    }
+}

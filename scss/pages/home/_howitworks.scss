@@ -1,0 +1,71 @@
+.section--how-it-works {
+    // allow grey bg to extend to edges
+    padding: 0;
+    max-width: 1920px;
+    background-image: none;
+
+    @include respond(desk-small) {
+        background-image: url(/img/home/how-it-works-bg.jpg);
+        background-size: cover;
+        background-position: center right;
+        background-attachment: fixed;
+        margin: 12rem auto 0;
+    }
+
+    // for 2dpi but not mobile, as mobile does not have bg image
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 37.5em) {
+        background-image: url(/img/home/how-it-works-bg@2x.jpg);
+    }
+}
+
+.steps {
+    padding: 3rem;
+    background-color: $color-background-light-grey;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @include respond(tab-port) {
+        padding: 3rem 20%;
+    }
+
+    @include respond(desk-small) {
+        width: 33%;
+        margin-right: auto;
+        padding: 3rem;
+        background-color: rgba($color-background-light-grey, .81);
+        margin-left: 6rem;
+    }
+
+    @include respond(desk-medium) {
+        padding: 5rem;
+        margin-left: 8rem;
+    }
+
+    &__heading,
+    &__subheading,
+    &__cta {
+        align-self: center;
+    }
+
+    &__step {
+        padding: 0 .5rem;
+        display: flex;
+        align-items: center;
+
+        &:first-of-type {
+            margin-top: 1rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__number {
+        font-size: 9rem;
+        line-height: 1.25;
+        margin-right: -2.15rem;
+        color: rgba($color-text-on-white, .15);
+    }
+}
