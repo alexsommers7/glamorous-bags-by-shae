@@ -194,7 +194,7 @@ a[href^="tel"] {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -20vw;
+  left: -100vw;
   z-index: -1500;
   opacity: 0;
   pointer-events: none;
@@ -204,7 +204,7 @@ a[href^="tel"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+  transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
 .nav__list {
   width: 100%;

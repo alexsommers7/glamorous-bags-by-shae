@@ -55,14 +55,14 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: -20vw;
+        left: -100vw;
         z-index: -1500;
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
         width: 75%;
         @include flex-col-center;
-        transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        transition: all .75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
 
     &__list {
