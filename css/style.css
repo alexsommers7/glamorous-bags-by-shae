@@ -886,8 +886,7 @@ a[href^="tel"] {
       .header--catalog__hero {
         order: 0;
         flex: 0 0 35%;
-        height: 100%;
-        background-position: bottom; } }
+        height: 100%; } }
     @media only screen and (min-width: 100em) {
       .header--catalog__hero {
         height: 85%; } }
