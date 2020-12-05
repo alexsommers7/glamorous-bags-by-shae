@@ -10,3 +10,13 @@
 .text-right {
     text-align: right !important;
 }
+
+.flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.flex-center {
+    align-items: center !important;
+    justify-content: center !important;
+}
