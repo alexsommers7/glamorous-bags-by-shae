@@ -1160,7 +1160,7 @@ a[href^="tel"] {
   .footer__icon {
     width: 2rem;
     height: 2rem;
-    margin-top: .5rem;
+    margin: .5rem .5rem 0;
     fill: #333; }
 
 .copyright {
