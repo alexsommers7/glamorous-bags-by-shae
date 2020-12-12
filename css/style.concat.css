@@ -789,6 +789,8 @@ a[href^="tel"] {
     fill: #333;
     opacity: .5;
     display: inline-block; }
+  .contact__icon--social {
+    margin: 0 1rem; }
 
 .form {
   width: 100%;
@@ -878,7 +880,7 @@ a[href^="tel"] {
     max-width: 45rem;
     background-image: url(/img/catalog/catalog-hero-1.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     height: 50rem;
     width: 100%;
     animation: imageSwap 13s infinite; }
@@ -886,8 +888,7 @@ a[href^="tel"] {
       .header--catalog__hero {
         order: 0;
         flex: 0 0 35%;
-        height: 100%;
-        background-position: bottom; } }
+        height: 100%; } }
     @media only screen and (min-width: 100em) {
       .header--catalog__hero {
         height: 85%; } }
@@ -1068,7 +1069,7 @@ a[href^="tel"] {
       height: 100%;
       display: block; }
       .category__option > picture > img:hover {
-        transform: none;
+        transform: translateY(0);
         opacity: 1; }
 
 .category__number {
@@ -1159,8 +1160,10 @@ a[href^="tel"] {
   .footer__icon {
     width: 2rem;
     height: 2rem;
-    margin-top: .5rem;
+    margin: .5rem .5rem 0;
     fill: #333; }
+  .footer a {
+    text-decoration: none; }
 
 .copyright {
   font-size: 1.35rem;
@@ -1177,6 +1180,14 @@ a[href^="tel"] {
 
 .text-right {
   text-align: right !important; }
+
+.flex-row {
+  display: flex !important;
+  flex-direction: row !important; }
+
+.flex-center {
+  align-items: center !important;
+  justify-content: center !important; }
 
 .fade {
   transition: opacity .75s ease-in-out, transform .75s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out; }
