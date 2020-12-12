@@ -2,7 +2,7 @@
 const toTopBtn = document.querySelector(".toTop");
 
 window.onscroll = () => {
-    (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)
+    (document.body.scrollTop > 500)
     ? toTopBtn.style.display = "flex"
     : toTopBtn.style.display = "none";
 };
