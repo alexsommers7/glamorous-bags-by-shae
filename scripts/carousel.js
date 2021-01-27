@@ -15,8 +15,8 @@ slides.forEach(slide => {
 });
 
 // add fill to first dot
-    const dots = document.querySelectorAll(".testimonial__dot");
-    dots[0].classList.add("isActive");
+const dots = document.querySelectorAll(".testimonial__dot");
+dots[0].classList.add("isActive");
 
 // slider functionality
 function carousel(n, direction) {
@@ -39,3 +39,22 @@ function carousel(n, direction) {
     // update counter variable
     return position = n;
 };
+
+// swiping functionality on touchscreen
+let touchstartX = 0;
+let touchendX = 0;
+let track = document.querySelector(".testimonials");
+
+function handleGesture() {
+    if (touchendX < touchstartX) carousel(position + 1);
+    if (touchendX > touchstartX) carousel(position - 1);
+}
+
+track.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+track.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX;
+    handleGesture();
+}, { passive: true });
