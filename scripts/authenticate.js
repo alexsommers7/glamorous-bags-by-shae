@@ -18,7 +18,7 @@ function getCookie(cname) {
 // Check Authentication Function
 function checkAuthentication() {
   var authentication = getCookie("authenticated");
-  if (authentication != "true" && window.location.href != "https://glamorousbagsbyshae.com/gateway") window.location.replace("/gateway");
+  if (authentication != "true" && window.location.href != "/gateway") window.location.replace("/gateway");
   else if (authentication != "true") return "not authenticated";
   else return "authenticated";
 }
