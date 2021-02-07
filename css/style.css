@@ -845,6 +845,7 @@ a[href^="tel"] {
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
     appearance: none;
+    -webkit-appearance: none !important;
     background-color: transparent;
     border: none;
     cursor: pointer;
