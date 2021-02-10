@@ -1,4 +1,4 @@
-// Get Cookie Function
+// Function to Get Cookie
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -15,7 +15,7 @@ function getCookie(cname) {
   return "";
 }
 
-// Check Authentication Function
+// Function to Check Authentication
 function checkAuthentication() {
   var authentication = getCookie("authenticated");
   if (authentication != "true" && window.location.href != "https://glamorousbagsbyshae.com/gateway") window.location.replace("/gateway");
