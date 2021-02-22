@@ -845,6 +845,7 @@ a[href^="tel"] {
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
     appearance: none;
+    -webkit-appearance: none !important;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1160,7 +1161,7 @@ a[href^="tel"] {
   .footer__icon {
     width: 2rem;
     height: 2rem;
-    margin: .5rem .5rem 0;
+    margin: 0.5rem 0.5rem 0;
     fill: #333; }
   .footer a {
     text-decoration: none; }
