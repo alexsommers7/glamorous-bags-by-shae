@@ -1,14 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="staticrypt-html">
-
-<head>
+  <head>
     <script src="/scripts/authenticate.js"></script>
     <script>
-        if (checkAuthentication() === "authenticated") window.location.replace("/");
+      if (checkAuthentication() === "authenticated") window.location.replace("/");
     </script>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- do not cache this page -->
     <meta http-equiv="cache-control" content="max-age=0" />
@@ -16,199 +15,196 @@
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
 
     <style>
-        .staticrypt-hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: 0;
-            border-top: 1px solid #eee;
-        }
+      .staticrypt-hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+      }
 
-        .staticrypt-page {
-            width: 360px;
-            max-width: 100%;
-            padding: 8% 0 0;
-            margin: auto;
-            box-sizing: border-box;
-        }
+      .staticrypt-page {
+        width: 360px;
+        max-width: 100%;
+        padding: 8% 0 0;
+        margin: auto;
+        box-sizing: border-box;
+      }
 
-        .staticrypt-form {
-            position: relative;
-            z-index: 1;
-            background: #FFFFFF;
-            max-width: 360px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
+      .staticrypt-form {
+        position: relative;
+        z-index: 1;
+        background: #ffffff;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
 
-        .staticrypt-form input {
-            outline: 0;
-            background: #f2f2f2;
-            width: 100%;
-            border: 0;
-            margin: 15px 0;
-            padding: 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
+      .staticrypt-form input {
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 15px 0;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
 
-        .staticrypt-form input:last-child {
-            margin: 0;
-        }
+      .staticrypt-form input:last-child {
+        margin: 0;
+      }
 
-        .staticrypt-form .staticrypt-decrypt-button {
-            text-transform: uppercase;
-            outline: 0;
-            background: rgba(228, 154, 153, .85);
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #FFFFFF;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all .2s;
-        }
+      .staticrypt-form .staticrypt-decrypt-button {
+        text-transform: uppercase;
+        outline: 0;
+        background: rgba(228, 154, 153, 0.85);
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
 
-        .staticrypt-form .staticrypt-decrypt-button:hover,
-        .staticrypt-form .staticrypt-decrypt-button:active,
-        .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: rgba(228, 154, 153, .7);
-        }
+      .staticrypt-form .staticrypt-decrypt-button:hover,
+      .staticrypt-form .staticrypt-decrypt-button:active,
+      .staticrypt-form .staticrypt-decrypt-button:focus {
+        background: rgba(228, 154, 153, 0.7);
+      }
 
-        .staticrypt-html {
-            height: 100%;
-        }
+      .staticrypt-html {
+        height: 100%;
+      }
 
-        .staticrypt-body {
-            margin-bottom: 1em;
-            background: rgba(228, 154, 153, .33);
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, rgba(228, 154, 153, .73), rgba(228, 154, 153, 1));
-            background: -moz-linear-gradient(right, rgba(228, 154, 153, .73), rgba(228, 154, 153, 1));
-            background: -o-linear-gradient(right, rgba(228, 154, 153, .73), rgba(228, 154, 153, 1));
-            background: linear-gradient(to left, rgba(228, 154, 153, .73), rgba(228, 154, 153, 1));
-            font-family: "Arial", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+      .staticrypt-body {
+        margin-bottom: 1em;
+        background: rgba(228, 154, 153, 0.33);
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(right, rgba(228, 154, 153, 0.73), rgba(228, 154, 153, 1));
+        background: -moz-linear-gradient(right, rgba(228, 154, 153, 0.73), rgba(228, 154, 153, 1));
+        background: -o-linear-gradient(right, rgba(228, 154, 153, 0.73), rgba(228, 154, 153, 1));
+        background: linear-gradient(to left, rgba(228, 154, 153, 0.73), rgba(228, 154, 153, 1));
+        font-family: "Arial", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-        .staticrypt-instructions {
-            margin-top: -1em;
-            margin-bottom: 1em;
-        }
+      .staticrypt-instructions {
+        margin-top: -1em;
+        margin-bottom: 1em;
+      }
 
-        .staticrypt-title {
-            font-size: 1.5em;
-        }
+      .staticrypt-title {
+        font-size: 1.5em;
+      }
 
-        .staticrypt-footer {
-            position: fixed;
-            height: 20px;
-            font-size: 16px;
-            padding: 2px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin-bottom: 0;
-        }
+      .staticrypt-footer {
+        position: fixed;
+        height: 20px;
+        font-size: 16px;
+        padding: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+      }
 
-        .staticrypt-footer p {
-            margin: 2px;
-            text-align: center;
-            float: right;
-        }
+      .staticrypt-footer p {
+        margin: 2px;
+        text-align: center;
+        float: right;
+      }
 
-        .staticrypt-footer a {
-            text-decoration: none;
-        }
+      .staticrypt-footer a {
+        text-decoration: none;
+      }
     </style>
-</head>
+  </head>
 
-<body class="staticrypt-body">
+  <body class="staticrypt-body">
     <div class="staticrypt-page">
-        <div class="staticrypt-form">
-            <div class="staticrypt-instructions">
-                <p class="staticrypt-title">Glamorous Bags By Shae</p>
-                <p></p>
-            </div>
-
-            <hr class="staticrypt-hr">
-
-            <form id="staticrypt-form" action="#" method="post">
-                <input id="staticrypt-password" type="password" name="password" placeholder="Enter Password"
-                    autofocus />
-
-                <input type="submit" id="staticrypt-submit" class="form__submit staticrypt-decrypt-button"
-                    value="Continue" />
-            </form>
+      <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+          <p class="staticrypt-title">Glamorous Bags By Shae</p>
+          <p></p>
         </div>
 
+        <hr class="staticrypt-hr" />
+
+        <form id="staticrypt-form" action="#" method="post">
+          <input id="staticrypt-password" type="password" name="password" placeholder="Enter Password" autofocus />
+
+          <input type="submit" id="staticrypt-submit" class="form__submit staticrypt-decrypt-button" value="Continue" />
+        </form>
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
-        integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"
+      integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        /**
-         * Decrypt a salted msg using a password.
-         * Inspired by https://github.com/adonespitogo
-         */
-        var keySize = 256;
-        var iterations = 1000;
-        function decrypt(encryptedMsg, pass) {
-            var salt = CryptoJS.enc.Hex.parse(encryptedMsg.substr(0, 32));
-            var iv = CryptoJS.enc.Hex.parse(encryptedMsg.substr(32, 32))
-            var encrypted = encryptedMsg.substring(64);
+      /**
+       * Decrypt a salted msg using a password.
+       * Inspired by https://github.com/adonespitogo
+       * https://robinmoisson.github.io/staticrypt/
+       */
+      var keySize = 256;
+      var iterations = 1000;
+      function decrypt(encryptedMsg, pass) {
+        var salt = CryptoJS.enc.Hex.parse(encryptedMsg.substr(0, 32));
+        var iv = CryptoJS.enc.Hex.parse(encryptedMsg.substr(32, 32));
+        var encrypted = encryptedMsg.substring(64);
 
-            var key = CryptoJS.PBKDF2(pass, salt, {
-                keySize: keySize / 32,
-                iterations: iterations
-            });
-
-            var decrypted = CryptoJS.AES.decrypt(encrypted, key, {
-                iv: iv,
-                padding: CryptoJS.pad.Pkcs7,
-                mode: CryptoJS.mode.CBC
-            }).toString(CryptoJS.enc.Utf8);
-            return decrypted;
-        }
-
-        function checkAuth(authenticated) {
-            var passphrase = document.getElementById('staticrypt-password').value,
-                encryptedMsg = '0d1e2acb6e0cf1c3ea8815b115fb1b5eb5d23f601c75d3a709c110a6487df09ac57e3b19b0e0f609356702c434e404ecb1080e92965298db704278156da96216yJrptBud1jB2x65ORre1zg==',
-                encryptedHMAC = encryptedMsg.substring(0, 64),
-                encryptedHTML = encryptedMsg.substring(64),
-                decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
-
-            if (decryptedHMAC !== encryptedHMAC) {
-                alert('Incorrect Password');
-                return;
-            }
-
-            // Set Cookie
-            function setCookie(cname, cvalue, exdays) {
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires=" + d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-            }
-            setCookie("authenticated", true, 3);
-
-            window.location.replace("/")
-        };
-
-
-
-        document.getElementById('staticrypt-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            checkAuth(false);
+        var key = CryptoJS.PBKDF2(pass, salt, {
+          keySize: keySize / 32,
+          iterations: iterations,
         });
 
-    </script>
-</body>
+        var decrypted = CryptoJS.AES.decrypt(encrypted, key, {
+          iv: iv,
+          padding: CryptoJS.pad.Pkcs7,
+          mode: CryptoJS.mode.CBC,
+        }).toString(CryptoJS.enc.Utf8);
+        return decrypted;
+      }
 
+      function checkAuth(authenticated) {
+        var passphrase = document.getElementById("staticrypt-password").value,
+          encryptedMsg =
+            "98c0ea86a39d60a59098050d60941d3b1d95fa82a62c27f8cd0c21486b867e4c6bb4f8bdac93ee2d419e5213a9cc29cdb5555e3cad823736d1aa120d63e08080DW1jBvqTn0P9HFHW6QcjXw==",
+          encryptedHMAC = encryptedMsg.substring(0, 64),
+          encryptedHTML = encryptedMsg.substring(64),
+          decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+        if (decryptedHMAC !== encryptedHMAC) {
+          alert("Incorrect Password");
+          return;
+        }
+
+        // Set Cookie
+        function setCookie(cname, cvalue, exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+          var expires = "expires=" + d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        setCookie("authenticated", true, 3);
+
+        window.location.replace("/");
+      }
+
+      document.getElementById("staticrypt-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        checkAuth(false);
+      });
+    </script>
+  </body>
 </html>
