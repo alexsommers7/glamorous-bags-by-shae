@@ -318,7 +318,6 @@ a[href^="tel"] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1920px;
   max-height: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -344,13 +343,13 @@ a[href^="tel"] {
   .header--home p {
     font-size: 2rem;
     opacity: 0;
-    margin-top: .5rem;
-    animation: fade-in-up 1s .7s ease forwards; }
+    margin-top: 0.5rem;
+    animation: fade-in-up 1s 0.7s ease forwards; }
     @media only screen and (min-width: 56.25em) {
       .header--home p {
         font-size: 3rem;
         position: absolute;
-        bottom: .5rem; } }
+        bottom: 0.5rem; } }
 
 .section--about {
   margin-top: 5rem;
