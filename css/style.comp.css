@@ -840,8 +840,8 @@ a[href^="tel"] {
       content: "";
       width: 100%;
       height: 120%;
-      background-color: #564F4C;
-      opacity: .45;
+      background-color: #564f4c;
+      opacity: 0.45;
       position: absolute;
       border-radius: 3px;
       top: -4rem;
@@ -868,19 +868,18 @@ a[href^="tel"] {
         margin-right: auto;
         padding: 0 1rem; } }
   .contact__method {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center; }
     @media only screen and (min-width: 75em) {
       .contact__method {
+        display: flex;
         flex-direction: row;
+        align-items: center;
         text-align: left; } }
     .contact__method:not(:last-child) {
       margin-bottom: 3rem; }
     .contact__method svg {
       flex: 0 0 100%;
-      margin-bottom: .25rem; }
+      margin-bottom: 0.25rem; }
       @media only screen and (min-width: 75em) {
         .contact__method svg {
           flex: 0 0 13%; } }
@@ -894,7 +893,7 @@ a[href^="tel"] {
     width: 3.5rem;
     height: 3.5rem;
     fill: #333;
-    opacity: .5;
+    opacity: 0.5;
     display: inline-block; }
   .contact__icon--social {
     margin: 0 1rem; }
@@ -925,13 +924,13 @@ a[href^="tel"] {
     font-family: "Cardo", serif;
     font-size: 1.6rem;
     margin-bottom: 4.5rem;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     background-color: transparent;
     border: 2px solid #707070;
     border-radius: 2px;
     width: 100%;
     max-width: 100%;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .form__input:focus {
     outline: none;
     border-bottom: 3px solid #55c57a;
@@ -960,7 +959,7 @@ a[href^="tel"] {
     display: inline-block;
     margin: auto;
     padding: 0;
-    line-height: .9;
+    line-height: 0.9;
     border-bottom: 3px solid rgba(228, 154, 153, 0.4);
     transition: all 0.3s; }
     .form__submit:hover {

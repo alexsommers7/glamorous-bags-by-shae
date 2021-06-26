@@ -1,209 +1,209 @@
 .section--contact {
-    align-items: center;
+  align-items: center;
 
-    @include respond(desk-small) {
-        flex-direction: row;
-        transform: translateX(-9rem);
-        margin: 10rem auto 8rem;
-    }
+  @include respond(desk-small) {
+    flex-direction: row;
+    transform: translateX(-9rem);
+    margin: 10rem auto 8rem;
+  }
 }
 
 .contact {
-    width: 100%;
+  width: 100%;
 
-    &__hero {
-        position: relative;
-        overflow: visible;
-        border-radius: $design-border-radius-default;
-        margin: 9.5rem auto;
-        transform: translateX(-3.1rem);
-        max-width: 30rem;
+  &__hero {
+    position: relative;
+    overflow: visible;
+    border-radius: $design-border-radius-default;
+    margin: 9.5rem auto;
+    transform: translateX(-3.1rem);
+    max-width: 30rem;
 
-        @include respond(desk-small) {
-            flex: 0 0 50%;
-            max-width: 36rem;
-            order: 1;
-        }
-        
-        &::after {
-            content: "";
-            width: 100%;
-            height: 120%;
-            background-color: #564F4C;
-            opacity: .45;
-            position: absolute;
-            border-radius: $design-border-radius-default;
-            top: -4rem;
-            right: -6rem;
-            z-index: -1;
-        }
-
-        & > img {
-            @include respond(desk-small) {
-                width: 100%;
-            }
-
-            // remove default hover effect since overflow is visible
-            &:hover {
-                transform: none;
-                opacity: 1;
-            }
-        }
+    @include respond(desk-small) {
+      flex: 0 0 50%;
+      max-width: 36rem;
+      order: 1;
     }
 
-    &__heading {
-        margin-bottom: 3rem;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 120%;
+      background-color: #564f4c;
+      opacity: 0.45;
+      position: absolute;
+      border-radius: $design-border-radius-default;
+      top: -4rem;
+      right: -6rem;
+      z-index: -1;
     }
 
-    &__methods {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;;
+    & > img {
+      @include respond(desk-small) {
+        width: 100%;
+      }
 
-        @include respond(desk-small) {
-            align-items: stretch;
-            max-width: 65%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 1rem;
-        }
+      // remove default hover effect since overflow is visible
+      &:hover {
+        transform: none;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include respond(desk-small) {
+      align-items: stretch;
+      max-width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1rem;
+    }
+  }
+
+  &__method {
+    text-align: center;
+
+    @include respond(desk-small) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
     }
 
-    &__method {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        @include respond(desk-small) {
-            flex-direction: row;
-            text-align: left;
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 3rem;
-        }
-
-        & svg {
-            flex: 0 0 100%;
-            margin-bottom: .25rem;
-
-            @include respond(desk-small) {
-                flex: 0 0 13%;
-            }
-        }
-
-        & p {
-            flex: 0 0 100%;
-            font-size: 2rem;
-
-            @include respond(desk-small) {
-                flex: 0 0 87%;
-            }
-        }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
     }
 
-    &__icon {
-        width: 3.5rem;
-        height: 3.5rem;
-        fill: $color-text-on-white;
-        opacity: .5;
-        display: inline-block;
+    & svg {
+      flex: 0 0 100%;
+      margin-bottom: 0.25rem;
+
+      @include respond(desk-small) {
+        flex: 0 0 13%;
+      }
     }
 
-    &__icon--social {
-        margin: 0 1rem;
+    & p {
+      flex: 0 0 100%;
+      font-size: 2rem;
+
+      @include respond(desk-small) {
+        flex: 0 0 87%;
+      }
     }
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: $color-text-on-white;
+    opacity: 0.5;
+    display: inline-block;
+  }
+
+  &__icon--social {
+    margin: 0 1rem;
+  }
 }
 
 .form {
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include respond(tab-land) {
+    max-width: 65%;
+  }
+
+  @include respond(desk-small) {
+    padding: 2rem;
+  }
+
+  &__label {
+    color: $color-text-on-white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  &__input,
+  &__textarea {
+    appearance: none; // override safari inset shadow default
+    display: block;
+    font-family: $font-family-primary;
+    font-size: 1.6rem;
+    margin-bottom: 4.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid $color-form-border;
+    border-radius: 2px;
     width: 100%;
-    padding: 3rem 2rem;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    transition: all 0.3s;
+  }
 
-    @include respond(tab-port) {
-        max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
+  &__input {
+    &:focus {
+      outline: none; // removing focus in place of bottom border - accessibility not impacted
+      border-bottom: 3px solid $color-green;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     }
 
-    @include respond(tab-land) {
-        max-width: 65%;
+    &:focus:invalid {
+      // when invalid as interpreted by browser
+      border-bottom: 3px solid $color-red;
     }
+  }
+
+  &__textarea {
+    height: 15rem;
+    font-family: $font-family-primary;
 
     @include respond(desk-small) {
-        padding: 2rem;
+      height: 10rem;
     }
 
-    &__label {
-        color: $color-text-on-white;
-        font-size: 1.6rem;
-        text-transform: uppercase;
+    &:focus {
+      border: 3px solid $color-text-on-white;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     }
+  }
 
-    &__input,
-    &__textarea {
-        appearance: none; // override safari inset shadow default
-        display: block;
-        font-family: $font-family-primary;
-        font-size: 1.6rem;
-        margin-bottom: 4.5rem;
-        padding: .5rem 1.5rem;
-        background-color: transparent;
-        border: 2px solid $color-form-border;
-        border-radius: 2px;
-        width: 100%;
-        max-width: 100%;
-        transition: all .3s;
+  &__submit {
+    color: $color-text-on-white;
+    font-family: $font-family-secondary;
+    font-size: 2rem;
+    appearance: none;
+    -webkit-appearance: none !important;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    line-height: 0.9;
+    border-bottom: 3px solid rgba($color-primary, 0.4);
+    transition: $transition-speed-regular;
+
+    &:hover {
+      transform: translateY(-0.2rem);
     }
-
-    &__input {
-        &:focus {
-            outline: none; // removing focus in place of bottom border - accessibility not impacted
-            border-bottom: 3px solid $color-green;
-            box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
-        }
-
-        &:focus:invalid { // when invalid as interpreted by browser
-            border-bottom: 3px solid $color-red;
-        }
-    }
-
-    &__textarea {
-        height: 15rem;
-        font-family: $font-family-primary;
-
-        @include respond(desk-small) {
-            height: 10rem;
-        }
-
-        &:focus {
-            border: 3px solid $color-text-on-white;
-            box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
-        }
-    }
-
-    &__submit {
-        color: $color-text-on-white;
-        font-family: $font-family-secondary;
-        font-size: 2rem;
-        appearance: none;
-        -webkit-appearance: none !important;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        display: inline-block;
-        margin: auto;
-        padding: 0;
-        line-height: .9;
-        border-bottom: 3px solid rgba($color-primary, .4);
-        transition: $transition-speed-regular;
-
-        &:hover {
-            transform: translateY(-.2rem);
-        }
-    }
+  }
 }
