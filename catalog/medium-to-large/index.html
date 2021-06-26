@@ -1,741 +1,1085 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="/scripts/authenticate.js"></script>
     <!-- begin google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157893992-2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-157893992-2');
+      gtag("config", "UA-157893992-2");
     </script>
     <!-- end Google Analytics-->
-    <meta charset="UTF-8">
-    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Medium to Large Bags | Glamorous Bags and Merchandise by Shae</title>
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicons/site.webmanifest">
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <div class="nav">
-        <button class="nav__button" id="navi-toggle" aria-label="navigation">
-            <span class="nav__icon">&nbsp;</span>
-        </button>
-        <div class="nav__background">&nbsp;</div>
-        <nav class="nav__nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
-                <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
-                <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
-                <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
+      <button class="nav__button" id="navi-toggle" aria-label="navigation">
+        <span class="nav__icon">&nbsp;</span>
+      </button>
+      <div class="nav__background">&nbsp;</div>
+      <nav class="nav__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
+          <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
+          <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <main>
-        <section class="section--category">
-            <div class="category__pagination">
-                <div class="category__pagination--1">
-                    <a href="/catalog/small" class="button category__button"><span>
-                            <svg class="icon icon-chevron-thin-left category__arrow">
-                                <use xlink:href="#icon-chevron-thin-left">
-                                    <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z">
-                                        </path>
-                                    </symbol>
-                                </use>
-                            </svg>
-                        </span> Small Bags</a>
-                </div>
-                <h2 class="heading heading--secondary category__heading">Medium to Large Bags</h2>
-                <div class="category__pagination--2">
-                    <a href="/catalog/backpacks-belt-bags" class="button category__button">Backpacks, Belt Bags, & More
-                        <span>
-                            <svg class="icon icon-chevron-thin-right category__arrow">
-                                <use xlink:href="#icon-chevron-thin-right">
-                                    <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z">
-                                        </path>
-                                    </symbol>
-                                </use>
-                            </svg>
-                        </span></a>
-                </div>
-            </div>
-            <div class="category__grid">
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-200-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#200</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-201-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#201</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-202-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#202</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-203-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#203</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-204-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#204</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-205-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#205</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-206-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#206</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-207-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#207</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-208-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#208</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-209-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#209</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-210-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#210</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-211-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#211</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-212-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#212</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-213-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#213</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-214-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#214</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-215-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#215</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-216-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#216</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-217-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#217</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-218-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#218</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-219-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#219</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-220-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#220</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-221-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#221</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-222-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#222</h3>
-                </div>
-                <div class="category__option bestSeller">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-223-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#223</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-224-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#224</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-225-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#225</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-226-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#226</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-227-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#227</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-228-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#228</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-229-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#229</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-230-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#230</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-231-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#231</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-232-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#232</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-233-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#233</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-234-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#234</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-235-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#235</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-236-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#236</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-237-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#237</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-238-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#238</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-239-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#239</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-240-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#240</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-241-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#241</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-242-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#242</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-243-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#243</h3>
-                </div>
-                <div class="category__option bestSeller">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-244-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#244</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-245-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#245</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-246-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#246</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-247-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#247</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-248-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#248</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-249-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#249</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-250-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#250</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-251-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#251</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-252-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#252</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-253-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#253</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-254-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#254</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-255-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#255</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-256-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#256</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-257-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#257</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-258-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#258</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-259-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#259</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-260-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#260</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-261-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#261</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-262-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#262</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-263-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#263</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-264-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#264</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-265-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#265</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-266-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#266</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-267-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#267</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-268-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#268</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-269-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#269</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-270-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#270</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-271-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#271</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-272-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#272</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-273-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#273</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-274-min.png" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#274</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-275-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#275</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-276-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#276</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-277-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#277</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-278-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#278</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-279-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#279</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-280-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#280</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-281-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#281</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/medium/medium-282-min.jpg" alt="medium bag" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#282</h3>
-                </div>
-            </div>
-        </section>
-        <button class="toTop" aria-label="Scroll to top of page">
-            <svg class="icon icon-chevron-thin-up">
-                <use xlink:href="#icon-chevron-thin-up"></use>
-                <symbol id="icon-chevron-thin-up" viewBox="0 0 20 20">
-                    <path
-                        d="M2.582 13.891c-0.272 0.268-0.709 0.268-0.979 0s-0.271-0.701 0-0.969l7.908-7.83c0.27-0.268 0.707-0.268 0.979 0l7.908 7.83c0.27 0.268 0.27 0.701 0 0.969s-0.709 0.268-0.978 0l-7.42-7.141-7.418 7.141z">
-                    </path>
-                </symbol>
-            </svg>
-        </button>
-        <div class="catalog__contact">
-            <h3>Got Everything You Need?<br><a href="/#contact" class="button catalog__contact-cta">Reach out!</a></h3>
+      <section class="section--category">
+        <div class="category__pagination">
+          <div class="category__pagination--1">
+            <a href="/catalog/small" class="button category__button"
+              ><span>
+                <svg class="icon icon-chevron-thin-left category__arrow">
+                  <use xlink:href="#icon-chevron-thin-left">
+                    <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
+                      <path
+                        d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"
+                      ></path>
+                    </symbol>
+                  </use>
+                </svg>
+              </span>
+              Small Bags</a
+            >
+          </div>
+          <h2 class="heading heading--secondary category__heading">Medium to Large Bags</h2>
+          <div class="category__pagination--2">
+            <a href="/catalog/backpacks-belt-bags" class="button category__button"
+              >Backpacks, Belt Bags, & More
+              <span>
+                <svg class="icon icon-chevron-thin-right category__arrow">
+                  <use xlink:href="#icon-chevron-thin-right">
+                    <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
+                      <path
+                        d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"
+                      ></path>
+                    </symbol>
+                  </use>
+                </svg> </span
+            ></a>
+          </div>
         </div>
-        <p class="disclaimer">
-            *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our
-            clients by providing only the best, quality products. Our team of trained experts examine the markets to
-            find the best supplier for each item on our site. We then follow up with the factories to ensure that each
-            item is manufactured with top quality, real materials. Before any product is shipped, each individual item
-            is hand-inspected by our trained quality control experts to triple check and make sure that you get exactly
-            what you are looking for. All of this just to ensure that you receive the best quality replica items on the
-            market!
-        </p>
+        <div class="category__grid">
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-200-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#200</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-201-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#201</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-202-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#202</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-203-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#203</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-204-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#204</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-205-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#205</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-206-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#206</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-207-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#207</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-208-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#208</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-209-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#209</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-210-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#210</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-211-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#211</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-212-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#212</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-213-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#213</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-214-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#214</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-215-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#215</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-216-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#216</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-217-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#217</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-218-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#218</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-219-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#219</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-220-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#220</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-221-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#221</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-222-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#222</h3>
+          </div>
+          <div class="category__option bestSeller">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-223-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#223</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-224-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#224</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-225-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#225</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-226-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#226</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-227-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#227</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-228-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#228</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-229-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#229</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-230-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#230</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-231-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#231</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-232-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#232</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-233-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#233</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-234-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#234</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-235-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#235</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-236-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#236</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-237-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#237</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-238-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#238</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-239-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#239</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-240-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#240</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-241-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#241</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-242-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#242</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-243-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#243</h3>
+          </div>
+          <div class="category__option bestSeller">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-244-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#244</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-245-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#245</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-246-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#246</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-247-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#247</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-248-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#248</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-249-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#249</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-250-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#250</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-251-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#251</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-252-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#252</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-253-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#253</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-254-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#254</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-255-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#255</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-256-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#256</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-257-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#257</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-258-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#258</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-259-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#259</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-260-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#260</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-261-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#261</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-262-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#262</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-263-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#263</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-264-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#264</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-265-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#265</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-266-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#266</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-267-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#267</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-268-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#268</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-269-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#269</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-270-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#270</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-271-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#271</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-272-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#272</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-273-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#273</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-274-min.png"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#274</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-275-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#275</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-276-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#276</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-277-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#277</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-278-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#278</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-279-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#279</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-280-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#280</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-281-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#281</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/medium/medium-282-min.jpg"
+                alt="medium bag"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#282</h3>
+          </div>
+        </div>
+      </section>
+      <button class="toTop" aria-label="Scroll to top of page">
+        <svg class="icon icon-chevron-thin-up">
+          <use xlink:href="#icon-chevron-thin-up"></use>
+          <symbol id="icon-chevron-thin-up" viewBox="0 0 20 20">
+            <path
+              d="M2.582 13.891c-0.272 0.268-0.709 0.268-0.979 0s-0.271-0.701 0-0.969l7.908-7.83c0.27-0.268 0.707-0.268 0.979 0l7.908 7.83c0.27 0.268 0.27 0.701 0 0.969s-0.709 0.268-0.978 0l-7.42-7.141-7.418 7.141z"
+            ></path>
+          </symbol>
+        </svg>
+      </button>
+      <div class="catalog__contact">
+        <h3>Got Everything You Need?<br /><a href="/#contact" class="button catalog__contact-cta">Reach out!</a></h3>
+      </div>
+      <p class="disclaimer">
+        *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our clients
+        by providing only the best, quality products. Our team of trained experts examine the markets to find the best
+        supplier for each item on our site. We then follow up with the factories to ensure that each item is
+        manufactured with top quality, real materials. Before any product is shipped, each individual item is
+        hand-inspected by our trained quality control experts to triple check and make sure that you get exactly what
+        you are looking for. All of this just to ensure that you receive the best quality replica items on the market!
+      </p>
     </main>
     <footer class="footer">
-        <div class="footer__main">
-            <div class="footer__left">
-                <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
-                <p><i>Based in Gilbert, AZ</i></p>
-            </div>
-            <div class="footer__right">
-                <p class="footer__contact">GlamourBag2020@gmail.com</p>
-                <p class="footer__contact">480-389-6155</p>
-                <p class="footer__contact">
-                    <a href="https://www.facebook.com/groups/2667079866894747" target="_blank" rel="noopener">
-                        <svg class="icon icon-facebook footer__icon">
-                            <use xlink:href="#icon-facebook"></use>
-                            <symbol id="icon-facebook" viewBox="0 0 32 32">
-                                <path
-                                    d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/louis_vuitton_shopaholic/" target="_blank" rel="noopener">
-                        <svg class="icon icon-instagram footer__icon">
-                            <use xlink:href="#icon-instagram"></use>
-                            <symbol id="icon-instagram" viewBox="0 0 32 32">
-                                <path
-                                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
-                                </path>
-                                <path
-                                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
-                                </path>
-                                <path
-                                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                </p>
-            </div>
+      <div class="footer__main">
+        <div class="footer__left">
+          <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
+          <p><i>Based in Gilbert, AZ</i></p>
         </div>
-        <div class="copyright">
-            <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.
-            </p>
-            <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+        <div class="footer__right">
+          <p class="footer__contact">GlamourBag2020@gmail.com</p>
+          <p class="footer__contact">480-389-6155</p>
+          <p class="footer__contact">
+            <a
+              href="https://www.facebook.com/groups/2667079866894747"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook - Glamorous Bags By Shae"
+            >
+              <svg class="icon icon-facebook footer__icon">
+                <use xlink:href="#icon-facebook"></use>
+                <symbol id="icon-facebook" viewBox="0 0 32 32">
+                  <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                </symbol>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/louis_vuitton_shopaholic/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram - Glamorous Bags By Shae"
+            >
+              <svg class="icon icon-instagram footer__icon">
+                <use xlink:href="#icon-instagram"></use>
+                <symbol id="icon-instagram" viewBox="0 0 32 32">
+                  <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                  ></path>
+                  <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                  ></path>
+                  <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                  ></path>
+                </symbol>
+              </svg>
+            </a>
+          </p>
         </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.</p>
+        <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+      </div>
     </footer>
     <div class="ie-alert">
-        <p class="heading heading--secondary">Whoops!<br> Looks like you're using an outdated browser.<br>Please view
-            this site on a more widely-supported browser, such as Microsoft Edge or Google Chrome for a better
-            experience.<br>Thank you!</p>
+      <p class="heading heading--secondary">
+        Whoops!<br />
+        Looks like you're using an outdated browser.<br />Please view this site on a more widely-supported browser, such
+        as Microsoft Edge or Google Chrome for a better experience.<br />Thank you!
+      </p>
     </div>
     <script src="/scripts/nav.js"></script>
     <script src="/scripts/totop.js"></script>
     <script src="/scripts/lazyload.js"></script>
     <script src="/scripts/main.js"></script>
-</body>
-
+  </body>
 </html>
