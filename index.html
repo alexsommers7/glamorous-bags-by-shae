@@ -1,329 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="/scripts/authenticate.js"></script>
-    <meta charset="UTF-8">
-    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Glamorous Bags and Merchandise by Shae</title>
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicons/site.webmanifest">
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <div class="nav">
-        <button class="nav__button" id="navi-toggle" aria-label="navigation">
-            <span class="nav__icon">&nbsp;</span>
-        </button>
-        <div class="nav__background">&nbsp;</div>
-        <nav class="nav__nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
-                <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
-                <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
-                <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
+      <button class="nav__button" id="navi-toggle" aria-label="navigation">
+        <span class="nav__icon">&nbsp;</span>
+      </button>
+      <div class="nav__background">&nbsp;</div>
+      <nav class="nav__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
+          <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
+          <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <header class="header--home">
-        <h1 class="heading heading--primary">Glamorous Bags and Merchandise</h1>
-        <p><i>By Shae</i></p>
+      <h1 class="heading heading--primary">Glamorous Bags and Merchandise</h1>
+      <p><i>By Shae</i></p>
     </header>
     <main>
-        <section class="section--about">
-            <div class="about">
-                <h2 class="about__heading heading heading--secondary fade fadeFromLeft">A Bit About Us</h2>
-                <p class="about__text">
-                    I've always loved purses, and when I discovered how amazing these bags were when I ordered one
-                    myself, it was life changing!
-                </p>
-                <p class="about__text">
-                    It was then that my mission to help women find beautiful purses at an affordable price began.
-                </p>
-                <p class="about__founder fade fadeFromLeft">
-                    <i>Shae - Founder</i>
-                </p>
-            </div>
-            <picture class="about__image fade fadeFromBottom">
-                <img src="/img/home/about-us-owner.jpg" srcset="/img/home/about-us-owner@2x.jpg 2x" alt="Shae, Founder"
-                    loading="lazy">
-            </picture>
-        </section>
-        <section class="section--your-style" id="catalog">
-            <h2 class="heading heading--secondary style__heading">The Right Bag for Your Style</h2>
-            <div class="style">
-                <picture class="style__hero">
-                    <img src="/img/home/right-bag-hero-image.jpg" srcset="/img/home/right-bag-hero-image@2x.jpg 2x"
-                        alt="Image of Model with Bag" loading="lazy" class="fade fadeFromLeft">
+      <section class="section--about">
+        <div class="about">
+          <h2 class="about__heading heading heading--secondary fade fadeFromLeft">A Bit About Us</h2>
+          <p class="about__text">
+            I've always loved purses, and when I discovered how amazing these bags were when I ordered one myself, it
+            was life changing!
+          </p>
+          <p class="about__text">
+            It was then that my mission to help women find beautiful purses at an affordable price began.
+          </p>
+          <p class="about__founder fade fadeFromLeft">
+            <i>Shae - Founder</i>
+          </p>
+        </div>
+        <picture class="about__image fade fadeFromBottom">
+          <img
+            src="/img/home/about-us-owner.jpg"
+            srcset="/img/home/about-us-owner@2x.jpg 2x"
+            alt="Shae, Founder"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+      <section class="section--your-style" id="catalog">
+        <h2 class="heading heading--secondary style__heading">The Right Bag for Your Style</h2>
+        <div class="style">
+          <picture class="style__hero">
+            <img
+              src="/img/home/right-bag-hero-image.jpg"
+              srcset="/img/home/right-bag-hero-image@2x.jpg 2x"
+              alt="Image of Model with Bag"
+              loading="lazy"
+              class="fade fadeFromLeft"
+            />
+          </picture>
+          <div class="style__bags">
+            <div class="style__bag">
+              <a href="/catalog/small">
+                <picture class="fade fadeFromBottom">
+                  <img
+                    src="/img/home/home-small-bags.png"
+                    srcset="/img/home/home-small-bags@2x.png 2x"
+                    alt="Image of Small Bag"
+                    loading="lazy"
+                  />
                 </picture>
-                <div class="style__bags">
-                    <div class="style__bag">
-                        <picture class="fade fadeFromBottom">
-                            <a href="/catalog/small">
-                                <img src="/img/home/home-small-bags.png" srcset="/img/home/home-small-bags@2x.png 2x"
-                                    alt="Image of Small Bag" loading="lazy">
-                            </a>
-                        </picture>
-                        <a href="/catalog/small" class="button style__cta">Shop Small Bags</a>
-                    </div>
-                    <div class="style__bag">
-                        <picture class="fade fadeFromBottom">
-                            <a href="/catalog/medium-to-large">
-                                <img src="/img/home/home-medium-bags.png" srcset="/img/home/home-medium-bags@2x.png 2x"
-                                    alt="Image of Medium Bag" loading="lazy">
-                            </a>
-                        </picture>
-                        <a href="/catalog/medium-to-large" class="button style__cta">Shop Medium to Large Bags</a>
-                    </div>
-                    <div class="style__bag">
-                        <picture class="fade fadeFromBottom">
-                            <a href="/catalog/backpacks-belt-bags">
-                                <img src="/img/home/home-other-bags.png" srcset="/img/home/home-other-bags@2x.png 2x"
-                                    alt="Image of Travel Bag" loading="lazy">
-                            </a>
-                        </picture>
-                        <a href="/catalog/backpacks-belt-bags" class="button style__cta">Shop Backpacks, Belt Bags, &
-                            More</a>
-                    </div>
-                </div>
+              </a>
+              <a href="/catalog/small" class="button style__cta">Shop Small Bags</a>
             </div>
-        </section>
-        <section class="section--how-it-works" id="steps">
-            <div class="steps">
-                <h2 class="heading heading--secondary steps__heading">How it Works</h2>
-                <p class="steps__subheading">in three easy steps</p>
-                <div class="steps__step fade fadeFromBottom">
-                    <p class="steps__number">1</p>
-                    <p>Browse the catalog and select the bag or bags that suit your style</p>
-                </div>
-                <div class="steps__step fade fadeFromBottom">
-                    <p class="steps__number">2</p>
-                    <p>Note the bag number(s)</p>
-                </div>
-                <div class="steps__step fade fadeFromBottom">
-                    <p class="steps__number">3</p>
-                    <p>Use the contact form at the bottom of this page to submit the bag number(s) with your
-                        information, and we will be in touch shortly</p>
-                </div>
-                <a href="/catalog" class="button steps__cta">Get Started</a>
+            <div class="style__bag">
+              <a href="/catalog/medium-to-large">
+                <picture class="fade fadeFromBottom">
+                  <img
+                    src="/img/home/home-medium-bags.png"
+                    srcset="/img/home/home-medium-bags@2x.png 2x"
+                    alt="Image of Medium Bag"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
+              <a href="/catalog/medium-to-large" class="button style__cta">Shop Medium to Large Bags</a>
             </div>
-        </section>
-        <section class="section--testimonials">
-            <picture class="fade fadeFromBottom">
-                <img src="/img/home/testimonials-image.jpg" srcset="/img/home/testimonials-image@2x.jpg 2x"
-                    alt="Image of Model with Bag" loading="lazy">
-            </picture>
-            <h2 class="heading heading--secondary testimonials__heading fade fadeFromLeft" id="testimonials">What Others
-                Are Saying</h2>
-            <div class="testimonials">
-                <button class="testimonial__arrow testimonial__arrow--left" aria-label="carousel previous"
-                    onclick="carousel(position - 1)">
-                    <svg class="icon icon-chevron-thin-left">
-                        <use xlink:href="#icon-chevron-thin-left">
-                            <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
-                                <path
-                                    d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z">
-                                </path>
-                            </symbol>
-                        </use>
-                    </svg>
-                </button>
-                <button class="testimonial__arrow testimonial__arrow--right" aria-label="carousel next"
-                    onclick="carousel(position + 1)">
-                    <svg class="icon icon-chevron-thin-right">
-                        <use xlink:href="#icon-chevron-thin-right">
-                            <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
-                                <path
-                                    d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z">
-                                </path>
-                            </symbol>
-                        </use>
-                    </svg>
-                </button>
-                <div class="testimonial isActive">
-                    <p class="testimonial__text">
-                        I highly recommend purchasing your next bag with Glamorous Bags by Shae. I've had nothing but a
-                        great experience. Not only are the bags that I purchased such good quality, her customer service
-                        is grade A. She has answered all my questions or concerns same-day. I look forward to being one
-                        of her loyal customers. Next time you're looking for a gift for yourself or a friend, order from
-                        her - you won't be disappointed!
-                    </p>
-                    <p class="testimonial__name"><i>Tameria C.</i></p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial__text">
-                        I just want to write a review to say how happy I am with my purchases from Glamorous Bags!! I
-                        love the quality of my bags! I'm really looking forward to placing new orders.
-                    </p>
-                    <p class="testimonial__name"><i>Brown C.</i></p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial__text">
-                        Had a super great experience with Shae - she went out of her way to use Apple Pay for me,
-                        invited me and my kid in to look at all the purses. I had to get a second one, they were so
-                        cute!!
-                    </p>
-                    <p class="testimonial__name"><i>Jessica J.</i></p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial__text">
-                        I never thought I would own a LV bag. Shae made it possible. I love my bag, the quality is
-                        absolutely amazing. It is just gorgeous! Shae offers affordable, beautiful, quality bags. I just
-                        ordered one for my daughter and I am quite sure these will not be the last!
-                    </p>
-                    <p class="testimonial__name"><i>Marcia R.</i></p>
-                </div>
-                <div class="testimonial__dots"></div>
+            <div class="style__bag">
+              <a href="/catalog/backpacks-belt-bags">
+                <picture class="fade fadeFromBottom">
+                  <img
+                    src="/img/home/home-other-bags.png"
+                    srcset="/img/home/home-other-bags@2x.png 2x"
+                    alt="Image of Travel Bag"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
+              <a href="/catalog/backpacks-belt-bags" class="button style__cta">Shop Backpacks, Belt Bags, & More</a>
             </div>
-        </section>
-        <section class="section--contact">
-            <picture class="contact__hero">
-                <img src="/img/home/contact-image.jpg" srcset="/img/home/contact-image@2x.jpg 2x"
-                    alt="Image of Model with Bag" loading="lazy" class="fade fadeFromLeft">
-            </picture>
-            <div class="contact" id="contact">
-                <h2 class="heading heading--secondary contact__heading">Get in Touch</h2>
-                <div class="contact__methods">
-                    <div class="contact__method">
-                        <svg class="icon icon-mail contact__icon">
-                            <use xlink:href="#icon-mail">
-                                <symbol id="icon-mail" viewBox="0 0 24 24">
-                                    <path
-                                        d="M3 7.921l8.427 5.899c0.34 0.235 0.795 0.246 1.147 0l8.426-5.899v10.079c0 0.272-0.11 0.521-0.295 0.705s-0.433 0.295-0.705 0.295h-16c-0.272 0-0.521-0.11-0.705-0.295s-0.295-0.433-0.295-0.705zM1 5.983c0 0.010 0 0.020 0 0.030v11.987c0 0.828 0.34 1.579 0.88 2.12s1.292 0.88 2.12 0.88h16c0.828 0 1.579-0.34 2.12-0.88s0.88-1.292 0.88-2.12v-11.988c0-0.010 0-0.020 0-0.030-0.005-0.821-0.343-1.565-0.88-2.102-0.541-0.54-1.292-0.88-2.12-0.88h-16c-0.828 0-1.579 0.34-2.12 0.88-0.537 0.537-0.875 1.281-0.88 2.103zM20.894 5.554l-8.894 6.225-8.894-6.225c0.048-0.096 0.112-0.183 0.188-0.259 0.185-0.185 0.434-0.295 0.706-0.295h16c0.272 0 0.521 0.11 0.705 0.295 0.076 0.076 0.14 0.164 0.188 0.259z">
-                                    </path>
-                                </symbol>
-                            </use>
-                        </svg>
-                        <p>GlamourBag2020@gmail.com</p>
-                    </div>
-                    <div class="contact__method">
-                        <svg class="icon icon-mobile2 contact__icon">
-                            <use xlink:href="#icon-mobile2">
-                                <symbol id="icon-mobile2" viewBox="0 0 32 32">
-                                    <path
-                                        d="M24 0h-18c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h18c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM15 30.556c-0.859 0-1.556-0.697-1.556-1.556s0.697-1.556 1.556-1.556 1.556 0.697 1.556 1.556-0.697 1.556-1.556 1.556zM24 26h-18v-22h18v22z">
-                                    </path>
-                                </symbol>
-                            </use>
-                        </svg>
-                        <p>480-389-6155</p>
-                    </div>
-                    <div class="contact__method flex-row flex-center">
-                        <a href="https://www.facebook.com/groups/2667079866894747" target="_blank" rel="noopener">
-                            <svg class="icon icon-facebook contact__icon contact__icon--social">
-                                <use xlink:href="#icon-facebook"></use>
-                                <symbol id="icon-facebook" viewBox="0 0 32 32">
-                                    <path
-                                        d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
-                                    </path>
-                                </symbol>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/louis_vuitton_shopaholic/" target="_blank" rel="noopener">
-                            <svg class="icon icon-instagram contact__icon contact__icon--social">
-                                <use xlink:href="#icon-instagram"></use>
-                                <symbol id="icon-instagram" viewBox="0 0 32 32">
-                                    <path
-                                        d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
-                                    </path>
-                                    <path
-                                        d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
-                                    </path>
-                                    <path
-                                        d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
-                                    </path>
-                                </symbol>
-                            </svg>
-                        </a>
-                    </div>
-                    <p><i>OR</i></p>
-                </div>
-                <form name="contact" method="POST" action="/success" class="form" data-netlify="true">
-                    <label class="form__label fade fadeFromTop" for="name">Name</label>
-                    <input class="form__input fade fadeFromTop" type="text" id="name" name="name" required="true">
-                    <label class="form__label fade fadeFromTop" for="email">Email</label>
-                    <input class="form__input fade fadeFromTop" type="email" id="email" name="email" required="true">
-                    <label class="form__label fade fadeFromTop" for="phone">Phone</label>
-                    <input class="form__input fade fadeFromTop" type="tel" id="phone" name="phone" required="true">
-                    <label class="form__label fade fadeFromTop" for="message">Message</label>
-                    <textarea class="form__textarea fade fadeFromTop" type="text" id="message" name="message"
-                        required="true"></textarea>
-                    <input class="form__submit fade fadeFromTop fadeDelayLong" type="submit" value="Send">
-                </form>
+          </div>
+        </div>
+      </section>
+      <section class="section--how-it-works" id="steps">
+        <div class="steps">
+          <h2 class="heading heading--secondary steps__heading">How it Works</h2>
+          <p class="steps__subheading">in three easy steps</p>
+          <div class="steps__step fade fadeFromBottom">
+            <p class="steps__number">1</p>
+            <p>Browse the catalog and select the bag or bags that suit your style</p>
+          </div>
+          <div class="steps__step fade fadeFromBottom">
+            <p class="steps__number">2</p>
+            <p>Note the bag number(s)</p>
+          </div>
+          <div class="steps__step fade fadeFromBottom">
+            <p class="steps__number">3</p>
+            <p>
+              Use the contact form at the bottom of this page to submit the bag number(s) with your information, and we
+              will be in touch shortly
+            </p>
+          </div>
+          <a href="/catalog" class="button steps__cta">Get Started</a>
+        </div>
+      </section>
+      <section class="section--testimonials">
+        <picture class="fade fadeFromBottom">
+          <img
+            src="/img/home/testimonials-image.jpg"
+            srcset="/img/home/testimonials-image@2x.jpg 2x"
+            alt="Image of Model with Bag"
+            loading="lazy"
+          />
+        </picture>
+        <h2 class="heading heading--secondary testimonials__heading fade fadeFromLeft" id="testimonials">
+          What Others Are Saying
+        </h2>
+        <div class="testimonials">
+          <button
+            class="testimonial__arrow testimonial__arrow--left"
+            aria-label="carousel previous"
+            onclick="carousel(position - 1)"
+          >
+            <svg class="icon icon-chevron-thin-left">
+              <use xlink:href="#icon-chevron-thin-left">
+                <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
+                  <path
+                    d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"
+                  ></path>
+                </symbol>
+              </use>
+            </svg>
+          </button>
+          <button
+            class="testimonial__arrow testimonial__arrow--right"
+            aria-label="carousel next"
+            onclick="carousel(position + 1)"
+          >
+            <svg class="icon icon-chevron-thin-right">
+              <use xlink:href="#icon-chevron-thin-right">
+                <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
+                  <path
+                    d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"
+                  ></path>
+                </symbol>
+              </use>
+            </svg>
+          </button>
+          <div class="testimonial isActive">
+            <p class="testimonial__text">
+              I highly recommend purchasing your next bag with Glamorous Bags by Shae. I've had nothing but a great
+              experience. Not only are the bags that I purchased such good quality, her customer service is grade A. She
+              has answered all my questions or concerns same-day. I look forward to being one of her loyal customers.
+              Next time you're looking for a gift for yourself or a friend, order from her - you won't be disappointed!
+            </p>
+            <p class="testimonial__name"><i>Tameria C.</i></p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__text">
+              I just want to write a review to say how happy I am with my purchases from Glamorous Bags!! I love the
+              quality of my bags! I'm really looking forward to placing new orders.
+            </p>
+            <p class="testimonial__name"><i>Brown C.</i></p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__text">
+              Had a super great experience with Shae - she went out of her way to use Apple Pay for me, invited me and
+              my kid in to look at all the purses. I had to get a second one, they were so cute!!
+            </p>
+            <p class="testimonial__name"><i>Jessica J.</i></p>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__text">
+              I never thought I would own a LV bag. Shae made it possible. I love my bag, the quality is absolutely
+              amazing. It is just gorgeous! Shae offers affordable, beautiful, quality bags. I just ordered one for my
+              daughter and I am quite sure these will not be the last!
+            </p>
+            <p class="testimonial__name"><i>Marcia R.</i></p>
+          </div>
+          <div class="testimonial__dots"></div>
+        </div>
+      </section>
+      <section class="section--contact">
+        <picture class="contact__hero">
+          <img
+            src="/img/home/contact-image.jpg"
+            srcset="/img/home/contact-image@2x.jpg 2x"
+            alt="Image of Model with Bag"
+            loading="lazy"
+            class="fade fadeFromLeft"
+          />
+        </picture>
+        <div class="contact" id="contact">
+          <h2 class="heading heading--secondary contact__heading">Get in Touch</h2>
+          <div class="contact__methods">
+            <div class="contact__method">
+              <svg class="icon icon-mail contact__icon">
+                <use xlink:href="#icon-mail">
+                  <symbol id="icon-mail" viewBox="0 0 24 24">
+                    <path
+                      d="M3 7.921l8.427 5.899c0.34 0.235 0.795 0.246 1.147 0l8.426-5.899v10.079c0 0.272-0.11 0.521-0.295 0.705s-0.433 0.295-0.705 0.295h-16c-0.272 0-0.521-0.11-0.705-0.295s-0.295-0.433-0.295-0.705zM1 5.983c0 0.010 0 0.020 0 0.030v11.987c0 0.828 0.34 1.579 0.88 2.12s1.292 0.88 2.12 0.88h16c0.828 0 1.579-0.34 2.12-0.88s0.88-1.292 0.88-2.12v-11.988c0-0.010 0-0.020 0-0.030-0.005-0.821-0.343-1.565-0.88-2.102-0.541-0.54-1.292-0.88-2.12-0.88h-16c-0.828 0-1.579 0.34-2.12 0.88-0.537 0.537-0.875 1.281-0.88 2.103zM20.894 5.554l-8.894 6.225-8.894-6.225c0.048-0.096 0.112-0.183 0.188-0.259 0.185-0.185 0.434-0.295 0.706-0.295h16c0.272 0 0.521 0.11 0.705 0.295 0.076 0.076 0.14 0.164 0.188 0.259z"
+                    ></path>
+                  </symbol>
+                </use>
+              </svg>
+              <p>GlamourBag2020@gmail.com</p>
             </div>
-        </section>
-        <p class="disclaimer">
-            *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our
-            clients by providing only the best, quality products. Our team of trained experts examine the markets to
-            find the best supplier for each item on our site. We then follow up with the factories to ensure that each
-            item is manufactured with top quality, real materials. Before any product is shipped, each individual item
-            is hand-inspected by our trained quality control experts to triple check and make sure that you get exactly
-            what you are looking for. All of this just to ensure that you receive the best quality replica items on the
-            market!
-        </p>
+            <div class="contact__method">
+              <svg class="icon icon-mobile2 contact__icon">
+                <use xlink:href="#icon-mobile2">
+                  <symbol id="icon-mobile2" viewBox="0 0 32 32">
+                    <path
+                      d="M24 0h-18c-1.1 0-2 0.9-2 2v28c0 1.1 0.9 2 2 2h18c1.1 0 2-0.9 2-2v-28c0-1.1-0.9-2-2-2zM15 30.556c-0.859 0-1.556-0.697-1.556-1.556s0.697-1.556 1.556-1.556 1.556 0.697 1.556 1.556-0.697 1.556-1.556 1.556zM24 26h-18v-22h18v22z"
+                    ></path>
+                  </symbol>
+                </use>
+              </svg>
+              <p>480-389-6155</p>
+            </div>
+            <div class="contact__method flex-row flex-center">
+              <a
+                href="https://www.facebook.com/groups/2667079866894747"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook - Glamorous Bags By Shae"
+              >
+                <svg class="icon icon-facebook contact__icon contact__icon--social">
+                  <use xlink:href="#icon-facebook-1"></use>
+                  <symbol viewBox="0 0 32 32" id="icon-facebook-1">
+                    <path
+                      d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"
+                    ></path>
+                  </symbol>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/louis_vuitton_shopaholic/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram - Glamorous Bags By Shae"
+              >
+                <svg class="icon icon-instagram contact__icon contact__icon--social">
+                  <use xlink:href="#icon-instagram-1"></use>
+                  <symbol viewBox="0 0 32 32" id="icon-instagram-1">
+                    <path
+                      d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                    ></path>
+                    <path
+                      d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                    ></path>
+                    <path
+                      d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                    ></path>
+                  </symbol>
+                </svg>
+              </a>
+            </div>
+            <p><i>OR</i></p>
+          </div>
+          <form name="contact" method="POST" action="/success" class="form" data-netlify="true">
+            <label class="form__label fade fadeFromTop" for="name">Name</label>
+            <input class="form__input fade fadeFromTop" type="text" id="name" name="name" required="true" />
+            <label class="form__label fade fadeFromTop" for="email">Email</label>
+            <input class="form__input fade fadeFromTop" type="email" id="email" name="email" required="true" />
+            <label class="form__label fade fadeFromTop" for="phone">Phone</label>
+            <input class="form__input fade fadeFromTop" type="tel" id="phone" name="phone" required="true" />
+            <label class="form__label fade fadeFromTop" for="message">Message</label>
+            <textarea
+              class="form__textarea fade fadeFromTop"
+              type="text"
+              id="message"
+              name="message"
+              required="true"
+            ></textarea>
+            <input class="form__submit fade fadeFromTop fadeDelayLong" type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+      <p class="disclaimer">
+        *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our clients
+        by providing only the best, quality products. Our team of trained experts examine the markets to find the best
+        supplier for each item on our site. We then follow up with the factories to ensure that each item is
+        manufactured with top quality, real materials. Before any product is shipped, each individual item is
+        hand-inspected by our trained quality control experts to triple check and make sure that you get exactly what
+        you are looking for. All of this just to ensure that you receive the best quality replica items on the market!
+      </p>
     </main>
     <footer class="footer">
-        <div class="footer__main">
-            <div class="footer__left">
-                <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
-                <p><i>Based in Gilbert, AZ</i></p>
-            </div>
-            <div class="footer__right">
-                <p class="footer__contact">GlamourBag2020@gmail.com</p>
-                <p class="footer__contact">480-389-6155</p>
-                <p class="footer__contact">
-                    <a href="https://www.facebook.com/groups/2667079866894747" target="_blank" rel="noopener">
-                        <svg class="icon icon-facebook footer__icon">
-                            <use xlink:href="#icon-facebook"></use>
-                            <symbol id="icon-facebook" viewBox="0 0 32 32">
-                                <path
-                                    d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/louis_vuitton_shopaholic/" target="_blank" rel="noopener">
-                        <svg class="icon icon-instagram footer__icon">
-                            <use xlink:href="#icon-instagram"></use>
-                            <symbol id="icon-instagram" viewBox="0 0 32 32">
-                                <path
-                                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
-                                </path>
-                                <path
-                                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
-                                </path>
-                                <path
-                                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                </p>
-            </div>
+      <div class="footer__main">
+        <div class="footer__left">
+          <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
+          <p><i>Based in Gilbert, AZ</i></p>
         </div>
-        <div class="copyright">
-            <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.
-            </p>
-            <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+        <div class="footer__right">
+          <p class="footer__contact">GlamourBag2020@gmail.com</p>
+          <p class="footer__contact">480-389-6155</p>
+          <p class="footer__contact">
+            <a
+              href="https://www.facebook.com/groups/2667079866894747"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook - Glamorous Bags By Shae"
+            >
+              <svg class="icon icon-facebook footer__icon">
+                <use xlink:href="#icon-facebook-2"></use>
+                <symbol viewBox="0 0 32 32" id="icon-facebook-2">
+                  <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                </symbol>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/louis_vuitton_shopaholic/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram - Glamorous Bags By Shae"
+            >
+              <svg class="icon icon-instagram footer__icon">
+                <use xlink:href="#icon-instagram-2"></use>
+                <symbol viewBox="0 0 32 32" id="icon-instagram-2">
+                  <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                  ></path>
+                  <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                  ></path>
+                  <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                  ></path>
+                </symbol>
+              </svg>
+            </a>
+          </p>
         </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.</p>
+        <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+      </div>
     </footer>
     <div class="ie-alert">
-        <p class="heading heading--secondary">Whoops!<br> Looks like you're using an outdated browser.<br>Please view
-            this site on a more widely-support browser, such as Google Chrome or Microsoft Edge for a better
-            experience.<br>Thank you!</p>
+      <p class="heading heading--secondary">
+        Whoops!<br />
+        Looks like you're using an outdated browser.<br />Please view this site on a more widely-support browser, such
+        as Google Chrome or Microsoft Edge for a better experience.<br />Thank you!
+      </p>
     </div>
-    <script src="/scripts/authenticate.js"></script>
     <script src="/scripts/nav.js"></script>
     <script src="/scripts/carousel.js"></script>
     <script src="/scripts/main.js"></script>
-</body>
-
+  </body>
 </html>

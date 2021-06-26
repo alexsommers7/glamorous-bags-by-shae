@@ -1,453 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="/scripts/authenticate.js"></script>
     <!-- begin google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157893992-2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-157893992-2');
+      gtag("config", "UA-157893992-2");
     </script>
     <!-- end Google Analytics-->
-    <meta charset="UTF-8">
-    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Glamorous Bags and Merchandise by Shae</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Glamorous bags and merchandise by Shae, based in Gilbert, Arizona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Backpacks and Belt Bags | Glamorous Bags and Merchandise by Shae</title>
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicons/site.webmanifest">
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <div class="nav">
-        <button class="nav__button" id="navi-toggle" aria-label="navigation">
-            <span class="nav__icon">&nbsp;</span>
-        </button>
-        <div class="nav__background">&nbsp;</div>
-        <nav class="nav__nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
-                <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
-                <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
-                <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
+      <button class="nav__button" id="navi-toggle" aria-label="navigation">
+        <span class="nav__icon">&nbsp;</span>
+      </button>
+      <div class="nav__background">&nbsp;</div>
+      <nav class="nav__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/catalog" class="nav__link">Catalog</a></li>
+          <li class="nav__item"><a href="/#steps" class="nav__link">How it Works</a></li>
+          <li class="nav__item"><a href="/#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <main>
-        <section class="section--category">
-            <div class="category__pagination">
-                <div class="category__pagination--1">
-                    <a href="/catalog/medium-to-large" class="button category__button"><span>
-                            <svg class="icon icon-chevron-thin-left category__arrow">
-                                <use xlink:href="#icon-chevron-thin-left">
-                                    <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z">
-                                        </path>
-                                    </symbol>
-                                </use>
-                            </svg>
-                        </span> Medium to Large Bags</a>
-                </div>
-                <h2 class="heading heading--secondary category__heading">Backpacks, Belt Bags, & More</h2>
-                <div class="category__pagination--2">
-                    <a href="/catalog/small" class="button category__button">Small Bags <span>
-                            <svg class="icon icon-chevron-thin-right category__arrow">
-                                <use xlink:href="#icon-chevron-thin-right">
-                                    <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z">
-                                        </path>
-                                    </symbol>
-                                </use>
-                            </svg>
-                        </span></a>
-                </div>
-            </div>
-            <div class="category__grid">
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-400-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#400</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-401-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#401</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-402-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#402</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-403-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#403</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-404-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#404</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-405-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#405</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-406-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#406</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-407-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#407</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-408-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#408</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-409-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#409</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-410-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#410</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-411-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#411</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-412-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#412</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-413-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#413</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-414-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#414</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-415-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#415</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-416-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#416</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-417-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#417</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-418-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#418</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-419-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#419</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-420-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#420</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-421-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#421</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-422-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#422</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-423-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#423</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-424-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#424</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-425-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#425</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-426-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#426</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-427-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#427</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-428-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#428</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-429-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#429</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-430-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#430</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-431-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#431</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-432-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#432</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-433-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#433</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-434-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#434</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-435-min.png" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#435</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-436-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#436</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-437-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#437</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-438-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#438</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-439-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#439</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-440-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#440</h3>
-                </div>
-                <div class="category__option">
-                    <picture>
-                        <img data-src="/img/catalog/other/other-441-min.jpg" alt="backpack" loading="lazy"
-                            class="fade fadeFromBottom lazyload">
-                    </picture>
-                    <h3 class="category__number">#441</h3>
-                </div>
-            </div>
-        </section>
-        <button class="toTop" aria-label="Scroll to top of page">
-            <svg class="icon icon-chevron-thin-up">
-                <use xlink:href="#icon-chevron-thin-up"></use>
-                <symbol id="icon-chevron-thin-up" viewBox="0 0 20 20">
-                    <path
-                        d="M2.582 13.891c-0.272 0.268-0.709 0.268-0.979 0s-0.271-0.701 0-0.969l7.908-7.83c0.27-0.268 0.707-0.268 0.979 0l7.908 7.83c0.27 0.268 0.27 0.701 0 0.969s-0.709 0.268-0.978 0l-7.42-7.141-7.418 7.141z">
-                    </path>
-                </symbol>
-            </svg>
-        </button>
-        <div class="catalog__contact">
-            <h3>Got Everything You Need?<br><a href="/#contact" class="button catalog__contact-cta">Reach out!</a></h3>
+      <section class="section--category">
+        <div class="category__pagination">
+          <div class="category__pagination--1">
+            <a href="/catalog/medium-to-large" class="button category__button"
+              ><span>
+                <svg class="icon icon-chevron-thin-left category__arrow">
+                  <use xlink:href="#icon-chevron-thin-left">
+                    <symbol id="icon-chevron-thin-left" viewBox="0 0 20 20">
+                      <path
+                        d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"
+                      ></path>
+                    </symbol>
+                  </use>
+                </svg>
+              </span>
+              Medium to Large Bags</a
+            >
+          </div>
+          <h2 class="heading heading--secondary category__heading">Backpacks, Belt Bags, & More</h2>
+          <div class="category__pagination--2">
+            <a href="/catalog/small" class="button category__button"
+              >Small Bags
+              <span>
+                <svg class="icon icon-chevron-thin-right category__arrow">
+                  <use xlink:href="#icon-chevron-thin-right">
+                    <symbol id="icon-chevron-thin-right" viewBox="0 0 20 20">
+                      <path
+                        d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"
+                      ></path>
+                    </symbol>
+                  </use>
+                </svg> </span
+            ></a>
+          </div>
         </div>
-        <p class="disclaimer">
-            *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our
-            clients by providing only the best, quality products. Our team of trained experts examine the markets to
-            find the best supplier for each item on our site. We then follow up with the factories to ensure that each
-            item is manufactured with top quality, real materials. Before any product is shipped, each individual item
-            is hand-inspected by our trained quality control experts to triple check and make sure that you get exactly
-            what you are looking for. All of this just to ensure that you receive the best quality replica items on the
-            market!
-        </p>
+        <div class="category__grid">
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-400-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#400</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-401-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#401</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-402-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#402</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-403-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#403</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-404-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#404</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-405-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#405</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-406-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#406</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-407-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#407</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-408-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#408</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-409-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#409</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-410-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#410</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-411-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#411</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-412-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#412</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-413-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#413</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-414-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#414</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-415-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#415</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-416-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#416</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-417-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#417</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-418-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#418</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-419-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#419</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-420-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#420</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-421-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#421</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-422-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#422</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-423-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#423</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-424-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#424</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-425-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#425</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-426-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#426</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-427-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#427</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-428-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#428</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-429-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#429</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-430-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#430</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-431-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#431</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-432-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#432</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-433-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#433</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-434-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#434</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-435-min.png"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#435</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-436-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#436</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-437-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#437</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-438-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#438</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-439-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#439</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-440-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#440</h3>
+          </div>
+          <div class="category__option">
+            <picture>
+              <img
+                data-src="/img/catalog/other/other-441-min.jpg"
+                alt="backpack"
+                loading="lazy"
+                class="fade fadeFromBottom lazyload"
+              />
+            </picture>
+            <h3 class="category__number">#441</h3>
+          </div>
+        </div>
+      </section>
+      <button class="toTop" aria-label="Scroll to top of page">
+        <svg class="icon icon-chevron-thin-up">
+          <use xlink:href="#icon-chevron-thin-up"></use>
+          <symbol id="icon-chevron-thin-up" viewBox="0 0 20 20">
+            <path
+              d="M2.582 13.891c-0.272 0.268-0.709 0.268-0.979 0s-0.271-0.701 0-0.969l7.908-7.83c0.27-0.268 0.707-0.268 0.979 0l7.908 7.83c0.27 0.268 0.27 0.701 0 0.969s-0.709 0.268-0.978 0l-7.42-7.141-7.418 7.141z"
+            ></path>
+          </symbol>
+        </svg>
+      </button>
+      <div class="catalog__contact">
+        <h3>Got Everything You Need?<br /><a href="/#contact" class="button catalog__contact-cta">Reach out!</a></h3>
+      </div>
+      <p class="disclaimer">
+        *At Glamorous Bags and Merchandise by Shae we are committed to building lasting relationships with our clients
+        by providing only the best, quality products. Our team of trained experts examine the markets to find the best
+        supplier for each item on our site. We then follow up with the factories to ensure that each item is
+        manufactured with top quality, real materials. Before any product is shipped, each individual item is
+        hand-inspected by our trained quality control experts to triple check and make sure that you get exactly what
+        you are looking for. All of this just to ensure that you receive the best quality replica items on the market!
+      </p>
     </main>
     <footer class="footer">
-        <div class="footer__main">
-            <div class="footer__left">
-                <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
-                <p><i>Based in Gilbert, AZ</i></p>
-            </div>
-            <div class="footer__right">
-                <p class="footer__contact">GlamourBag2020@gmail.com</p>
-                <p class="footer__contact">480-389-6155</p>
-                <p class="footer__contact">
-                    <a href="https://www.facebook.com/groups/2667079866894747" target="_blank" rel="noopener">
-                        <svg class="icon icon-facebook footer__icon">
-                            <use xlink:href="#icon-facebook"></use>
-                            <symbol id="icon-facebook" viewBox="0 0 32 32">
-                                <path
-                                    d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/louis_vuitton_shopaholic/" target="_blank" rel="noopener">
-                        <svg class="icon icon-instagram footer__icon">
-                            <use xlink:href="#icon-instagram"></use>
-                            <symbol id="icon-instagram" viewBox="0 0 32 32">
-                                <path
-                                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
-                                </path>
-                                <path
-                                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
-                                </path>
-                                <path
-                                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
-                                </path>
-                            </symbol>
-                        </svg>
-                    </a>
-                </p>
-            </div>
+      <div class="footer__main">
+        <div class="footer__left">
+          <h3><strong>Glamorous Bags and Merchandise by Shae</strong></h3>
+          <p><i>Based in Gilbert, AZ</i></p>
         </div>
-        <div class="copyright">
-            <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.
-            </p>
-            <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+        <div class="footer__right">
+          <p class="footer__contact">GlamourBag2020@gmail.com</p>
+          <p class="footer__contact">480-389-6155</p>
+          <p class="footer__contact">
+            <a href="https://www.facebook.com/groups/2667079866894747" target="_blank" rel="noopener">
+              <svg class="icon icon-facebook footer__icon">
+                <use xlink:href="#icon-facebook"></use>
+                <symbol id="icon-facebook" viewBox="0 0 32 32">
+                  <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                </symbol>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/louis_vuitton_shopaholic/" target="_blank" rel="noopener">
+              <svg class="icon icon-instagram footer__icon">
+                <use xlink:href="#icon-instagram"></use>
+                <symbol id="icon-instagram" viewBox="0 0 32 32">
+                  <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                  ></path>
+                  <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                  ></path>
+                  <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                  ></path>
+                </symbol>
+              </svg>
+            </a>
+          </p>
         </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Copyright© 2021 by Glamorous Bags and Merchandise by Shae. All rights reserved.</p>
+        <p class="copyright__text"><i>Designed and Developed by Alex Sommers</i></p>
+      </div>
     </footer>
     <div class="ie-alert">
-        <p class="heading heading--secondary">Whoops!<br> Looks like you're using an outdated browser.<br>Please view
-            this site on a more widely-supported browser, such as Microsoft Edge or Google Chrome for a better
-            experience.<br>Thank you!</p>
+      <p class="heading heading--secondary">
+        Whoops!<br />
+        Looks like you're using an outdated browser.<br />Please view this site on a more widely-supported browser, such
+        as Microsoft Edge or Google Chrome for a better experience.<br />Thank you!
+      </p>
     </div>
     <script src="/scripts/nav.js"></script>
     <script src="/scripts/totop.js"></script>
     <script src="/scripts/lazyload.js"></script>
     <script src="/scripts/main.js"></script>
-</body>
-
+  </body>
 </html>

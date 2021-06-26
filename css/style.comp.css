@@ -27,8 +27,21 @@ body {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     body > *:not(.ie-alert) {
       display: none !important; } }
+  @media (prefers-reduced-motion) {
+    body * {
+      animation: none !important;
+      transition: all 0s !important; } }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0; }
 
@@ -40,7 +53,7 @@ img {
   object-fit: cover; }
   img:hover {
     transform: scale3d(1.1, 1.1, 1);
-    opacity: .9; }
+    opacity: 0.9; }
 
 picture {
   overflow: hidden;
@@ -307,6 +320,100 @@ a[href^="tel"] {
     width: 3rem;
     height: 3rem;
     fill: #fff; }
+
+.staticrypt-hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee; }
+
+.staticrypt-page {
+  width: 360px;
+  max-width: 100%;
+  padding: 8% 0 0;
+  margin: auto;
+  box-sizing: border-box; }
+
+.staticrypt-form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+.staticrypt-form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 15px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+.staticrypt-form input:last-child {
+  margin: 0; }
+
+.staticrypt-form .staticrypt-decrypt-button {
+  text-transform: uppercase;
+  outline: 0;
+  background: rgba(228, 154, 153, 0.85);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s; }
+
+.staticrypt-form .staticrypt-decrypt-button:hover,
+.staticrypt-form .staticrypt-decrypt-button:active,
+.staticrypt-form .staticrypt-decrypt-button:focus {
+  background: rgba(228, 154, 153, 0.7); }
+
+.staticrypt-html {
+  height: 100%; }
+
+.staticrypt-body {
+  margin-bottom: 1em;
+  background: rgba(228, 154, 153, 0.33);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, rgba(228, 154, 153, 0.73), #e49a99);
+  background: -moz-linear-gradient(right, rgba(228, 154, 153, 0.73), #e49a99);
+  background: -o-linear-gradient(right, rgba(228, 154, 153, 0.73), #e49a99);
+  background: linear-gradient(to left, rgba(228, 154, 153, 0.73), #e49a99);
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.staticrypt-instructions {
+  margin-top: -1em;
+  margin-bottom: 1em; }
+
+.staticrypt-title {
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.staticrypt-footer {
+  position: fixed;
+  height: 20px;
+  font-size: 16px;
+  padding: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0; }
+
+.staticrypt-footer p {
+  margin: 2px;
+  text-align: center;
+  float: right; }
+
+.staticrypt-footer a {
+  text-decoration: none; }
 
 .header--home {
   height: 100vh;
